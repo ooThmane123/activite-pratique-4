@@ -1,0 +1,7 @@
+<div class="p-3" *ngIf="appState.productState.status=='ERROR'">
+  <div class="alert alert-danger">
+    <!--je vais l'afficher en format JSON-->
+    <!--{{appState.productState.errorMessage | json}} -->
+    {{appState.productState.errorMessage.message}}
+  </div>
+</div>
